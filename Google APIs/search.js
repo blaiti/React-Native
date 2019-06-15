@@ -49,22 +49,12 @@ export default class Search extends Component {
   keyExtractor = (item, index) => index.toString()
 
   renderItem = ({ item }) => (
-    <TouchableOpacity 
-      onPress={() => this.props.navigation.navigate('BookPage', 
-        { picture: item.volumeInfo.imageLinks.thumbnail ,
-          title: item.volumeInfo.title, 
-          description: item.volumeInfo.description,
-          date: item.volumeInfo.publishedDate,
-          author: item.volumeInfo.authors[0],
-          pages: item.volumeInfo.pageCount,
-          categories: item.volumeInfo.categories })}> 
       <SearchBookCard
       title={item.volumeInfo.title}
       vote={item.volumeInfo.averageRating}
       description={item.volumeInfo.description}
       date={item.volumeInfo.publishedDate}
       picture={item.volumeInfo.imageLinks.thumbnail} />
-    </TouchableOpacity>
   )
 
   render() {
