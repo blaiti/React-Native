@@ -21,7 +21,7 @@ export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.emailTxt}>Hello</Text>
+        <Text style={styles.emailTxt}>Hi</Text>
         <TouchableOpacity style={styles.btnContainer} onPress={() => this._logOut()}>
             <Text style={styles.btnTxt}>Log Out</Text>
         </TouchableOpacity>
