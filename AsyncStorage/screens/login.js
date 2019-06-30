@@ -50,13 +50,13 @@ export default class Login extends Component {
             </View>
             <View style={styles.formContainer}>
                 <TextInput
-                    placeholder='Email..'
+                    placeholder='Email...'
                     placeholderTextColor='#3498db'
                     style={styles.inputTxt}
                     onChangeText={(email) => this.setState({email})} />
 
                 <TextInput
-                    placeholder='Password..'
+                    placeholder='Password...'
                     placeholderTextColor='#3498db'
                     style={styles.inputTxt}
                     secureTextEntry={true}
