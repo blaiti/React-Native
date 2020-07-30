@@ -67,7 +67,7 @@ function MyTabs() {
         activeBackgroundColor: theme.colors.white,
         inactiveBackgroundColor: theme.colors.white,
         labelStyle: {
-          fontWeight: 'bold'}
+          fontWeight: 'bold'} 
       }}>
 
       <Tab.Screen 
