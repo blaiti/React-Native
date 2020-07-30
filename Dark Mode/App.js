@@ -9,6 +9,7 @@ export default class App extends React.Component {
     }
   }
 
+  
   toggleTheme() {
     this.setState({
       toggle: this.state.toggle ? false : true
